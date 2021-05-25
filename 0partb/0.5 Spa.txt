@@ -1,0 +1,30 @@
+title 0.5 Spa
+
+Spa Browser->Server: HTTP GET https://fullstack-exampleapp.herokuapp.com/spa
+
+
+Server->Spa Browser:html code
+
+Spa Browser->Server: HTTP GET https://fullstack-exampleapp.herokuapp.com/main.css server
+
+Server->Spa Browser:main.css
+
+Spa Browser->Server:HTTP GET https://fullstack-exampleapp.herokuapp.com/spa.js
+
+Server->Spa Browser:main.js
+
+note over Spa Browser:
+browser starts executing js-code
+that requests JSON data from server
+end note
+
+Spa Browser->Server:https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+
+Server->Spa Browser:{content: "linu", date: "2021-05-25T04:41:02.989Z"}
+
+note over Spa Browser:
+browswer perform events
+end note 
+
+
+

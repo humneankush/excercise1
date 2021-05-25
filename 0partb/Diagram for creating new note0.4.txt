@@ -1,0 +1,28 @@
+title Diagram for creating new note
+
+browser->server:HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
+
+server->browser:html code
+
+browser->server:HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+
+server->browser:main.css
+
+browser->server:HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
+
+server->browser:main.js
+
+
+note over browser:
+browser starts running js code
+requesting JSON data from the server
+end note
+
+browser->server:HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+
+server->browser:{"content":"duschache1","date":"2021-05-25T04:10:51.653Z"}]
+
+note over browser:
+the browser performs an event handler
+who renders notes on the screen
+end note
